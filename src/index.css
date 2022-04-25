@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .nav-link-hover{
+        @apply relative hover:before:absolute hover:before:-bottom-9 before:transition-all before:bg-orange before:left-0 before:right-0 before:h-1
+    }
+}

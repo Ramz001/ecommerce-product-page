@@ -1,11 +1,13 @@
+import '../../index.css'
+
 function NavbarLinks(){
     return(
         <div className="flex items-center gap-4">
-            <a href="#">Collections</a>
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#" className="nav-link-hover text-black-low-opacity">Collections</a>
+            <a href="#" className="nav-link-hover text-black-low-opacity">Men</a>
+            <a href="#" className="nav-link-hover text-black-low-opacity">Women</a>
+            <a href="#" className="nav-link-hover text-black-low-opacity">About</a>
+            <a href="#" className="nav-link-hover text-black-low-opacity">Contact</a>
         </div>
     )
 }
