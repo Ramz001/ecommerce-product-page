@@ -4,7 +4,7 @@ import ProductContainer from './components/productContainer/ProductContainer';
 
 function App() {
   return (
-    <div className='font-main bg-white xl:mx-20 mx-16'>
+    <div className='font-main bg-white lg:mx-[10%]'>
       <Navbar />
       <ProductContainer />
     </div>

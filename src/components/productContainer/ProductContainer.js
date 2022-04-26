@@ -1,15 +1,13 @@
 import ProductImageBox from "../productImageBox/ProductImageBox"
-import ProductDescription from "../productDescription/ProductDescription"
+import ProductHero from "../productHero/ProductHero"
 
 function ProductContainer(){
     return (
         <main className="flex mt-8 px-20 py-6">
             <ProductImageBox />
-            <ProductDescription />
+            <ProductHero />
         </main>
     )
 }
 
 export default ProductContainer
-
-

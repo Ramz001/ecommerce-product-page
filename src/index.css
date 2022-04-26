@@ -8,6 +8,9 @@
     .nav-link-hover{
         @apply relative hover:before:absolute hover:before:-bottom-9 before:transition before:duration-1000 before:ease-out before:bg-orange before:left-0 before:right-0 before:h-1
     }
+    .orange-btn{
+        @apply bg-orange text-white rounded-md hover:bg-opacity-70
+    }
     /*animation*/
    
 }

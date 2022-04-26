@@ -2,10 +2,10 @@ import closeLogo from '../../images/icon-close.svg'
 import nextLogo from '../../images/icon-next.svg'
 import previousLogo from '../../images/icon-previous.svg'
 import ProductImageGrid from '../productImageGrid/ProductImageGrid';
-import '../../index.css'
 
 function ProductImageBoxZoom(props){
-    const { handleZoomPicture, handleClick, currentProductImage, imgCarouselNext, imgCarouselPrevious } = props
+    const { handleZoomPicture, handleClick, currentProductImage, 
+            imgCarouselNext, imgCarouselPrevious } = props
     
     return(
         <article>
@@ -24,7 +24,6 @@ function ProductImageBoxZoom(props){
                         <img
                             src={previousLogo}
                             alt="previous logo"
-                            className=''
                         />
                     </div>
                     <div className='bg-white px-5 p-4 rounded-full absolute -right-6 bottom-[54%]
@@ -34,11 +33,8 @@ function ProductImageBoxZoom(props){
                         <img
                             src={nextLogo}
                             alt="next logo"
-                            className=''
                         />
                     </div>
-                    <img>
-                    </img>
                     <img 
                         src={require(`../../images/image-product-${currentProductImage}.jpg`)} 
                         alt='product chosen'
@@ -47,8 +43,7 @@ function ProductImageBoxZoom(props){
                     <ProductImageGrid 
                         handleClick={handleClick} 
                         currentProductImage={currentProductImage}
-                        
-                        />
+                    />
                 </div>
             </div>
         </article>

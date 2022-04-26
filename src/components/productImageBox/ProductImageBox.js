@@ -6,30 +6,25 @@ function ProductImageBox(){
     const [currentProductImage,setCurrentProductImage] = useState(1)
     const [zoomPicture,setZoomPicture] = useState(false)
 
+    // functions for the product image box
     function handleZoomPicture(){
         setZoomPicture(!zoomPicture)
     }
 
-    function handleClick(e){
-        setCurrentProductImage(e)
+    function handleClick(number){
+        setCurrentProductImage(number)
     }
 
    function imgCarouselNext(){
-       if(currentProductImage < 4){
-            setCurrentProductImage(currentProductImage + 1)
-         }
-        else{
-            setCurrentProductImage(1)
-        }
+        (currentProductImage < 4) 
+            ? setCurrentProductImage(currentProductImage + 1) 
+            : setCurrentProductImage(1)
    }
 
    function imgCarouselPrevious(){
-        if(currentProductImage > 1){
-            setCurrentProductImage(currentProductImage - 1)
-        }
-        else{
-            setCurrentProductImage(4)
-        }
+        (currentProductImage > 1)
+            ? setCurrentProductImage(currentProductImage - 1)
+            : setCurrentProductImage(4)
    }
 
 
@@ -37,23 +32,24 @@ function ProductImageBox(){
     return(
         <div className="flex flex-col">
             <img 
-            src={require(`../../images/image-product-${currentProductImage}.jpg`)} 
-            alt='product chosen'
-            className='object-cover w-[22rem] h-[22rem] rounded-2xl cursor-pointer'
-            onClick={handleZoomPicture}
+                src={require(`../../images/image-product-${currentProductImage}.jpg`)} 
+                alt='product chosen'
+                className='object-cover rounded-2xl h-[22rem] w-[22rem] cursor-pointer'
+                onClick={handleZoomPicture}
             />
             <ProductImageGrid 
                 handleClick={handleClick} 
                 currentProductImage={currentProductImage}
                 />
             
-            {zoomPicture && <ProductImageBoxZoom 
+            {zoomPicture && 
+            <ProductImageBoxZoom 
                 handleClick={handleClick} 
                 currentProductImage={currentProductImage} 
                 handleZoomPicture={handleZoomPicture}
                 imgCarouselNext={imgCarouselNext}
                 imgCarouselPrevious={imgCarouselPrevious}
-                />}   
+            />}   
         </div>
     )
 }
