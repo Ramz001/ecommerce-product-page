@@ -39,13 +39,12 @@ function ProductImageBox(){
             <img 
             src={require(`../../images/image-product-${currentProductImage}.jpg`)} 
             alt='product chosen'
-            className='object-cover w-[22rem] h-[22rem] rounded-2xl'
+            className='object-cover w-[22rem] h-[22rem] rounded-2xl cursor-pointer'
             onClick={handleZoomPicture}
             />
             <ProductImageGrid 
                 handleClick={handleClick} 
                 currentProductImage={currentProductImage}
-                gridWidth={'w-[22rem]'}
                 />
             
             {zoomPicture && <ProductImageBoxZoom 
