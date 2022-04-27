@@ -37,7 +37,6 @@ function ProductImageBox() {
           alt="product chosen"
           className="object-cover md:rounded-2xl image-box-responsive-width cursor-pointer"
           onClick={handleZoomPicture}
-          loading="lazy"
         />
         <div className="block md:hidden">
           <PreviousBtn
