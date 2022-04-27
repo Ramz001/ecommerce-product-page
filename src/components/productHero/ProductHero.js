@@ -3,7 +3,7 @@ import ProductAddToCart from "../productAddToCart/ProductAddToCart"
 
 function ProductHero(){
     return(
-        <article className="lg:ml-28 mt-8 lg:mt-4 mx-6 md:mx-0">
+        <article className="lg:ml-28 mt-8 lg:mt-4 mx-6 md:mx-0 mb-4 lg:mb-0">
             <ProductDescription />
             <div className="mt-6 2xl:mt-10 flex  items-center">
                 <span className="text-3xl 2xl:text-4xl font-bold text-very-dark-blue">$125.00</span>
