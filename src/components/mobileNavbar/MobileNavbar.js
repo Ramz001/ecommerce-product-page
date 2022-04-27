@@ -24,7 +24,7 @@ export default function MobileNavbar() {
           className={`h-screen top-0 left-0 w-[70%] text-very-dark-blue fixed bg-white transform 
             translate-x-[${isOpen}] z-40 transition-transform transform  ease-out delay-1000 duration-1000 before:w-screen before:h-screen before:bg-black-low-opacity before:left-[100%] before:top-0 before:absolute`}
         >
-          <span className="flex w-5 h-5 mt-10 ml-6 cursor-pointer" onClick={toggleMenu}>
+          <span className="flex w-5 h-5 mt-10 ml-7 cursor-pointer" onClick={toggleMenu}>
             <svg width='20px' xmlns="http://www.w3.org/2000/svg">
               <path
                 d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
