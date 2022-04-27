@@ -29,7 +29,8 @@ function PopUpCart({ popUpCart, amount, price, addToCart, removedFromCart }) {
               <img
                 src={productThumbnail}
                 alt="product thumbnail"
-                className="h-10 w-10"
+                loading='lazy'
+                className="h-10 w-10 rounded-md"
               />
               <div className="flex flex-col text-dark-grayish-blue capitalize">
                 <ProductTitle />

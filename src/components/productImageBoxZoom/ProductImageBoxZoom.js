@@ -23,6 +23,7 @@ function ProductImageBoxZoom(props) {
             <img
               src={closeLogo}
               alt="close logo"
+              loading="lazy"
               className="absolute -top-[10%] md:-top-[5%]  2xl:-top-[10%] right-0 cursor-pointer hover:opacity-60 2xl:w-[2rem]"
               onClick={handleZoomPicture}
             />
@@ -37,6 +38,7 @@ function ProductImageBoxZoom(props) {
             <img
               src={require(`../../images/image-product-${currentProductImage}.jpg`)}
               alt="product chosen"
+              loading="lazy"
               className="object-cover md:w-[30rem] md:h-[30rem] w-[20rem] h-[20rem] rounded-2xl 2xl:w-[40rem] 2xl:h-[40rem]"
             />
           </div>
