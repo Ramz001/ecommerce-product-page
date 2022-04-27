@@ -10,7 +10,7 @@ function PopUpCart({ popUpCart, amount, price, addToCart, removedFromCart }) {
     popUpCart && (
       <div
         className="flex flex-col absolute bg-white
-        shadow-2xl right-0 -bottom-[11rem] w-[22rem] font-bold z-30"
+        shadow-2xl right-0 -bottom-[11rem] w-[22rem] font-bold z-30 rounded-sm"
       >
         <div className="flex p-4 items-center border-b border-light-grayish-blue">
           Cart
