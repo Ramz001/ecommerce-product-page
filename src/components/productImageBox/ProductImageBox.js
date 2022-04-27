@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import ProductImageBoxZoom from '../productImageBoxZoom/ProductImageBoxZoom'
 import ProductImageGrid from '../productImageGrid/ProductImageGrid';
+import PreviousBtn from '../previousBtn/PreviousBtn';
+import NextBtn from '../nextBtn/NextBtn';
+import '../../index.css'
 
 function ProductImageBox(){
     const [currentProductImage,setCurrentProductImage] = useState(1)
@@ -26,17 +29,21 @@ function ProductImageBox(){
             ? setCurrentProductImage(currentProductImage - 1)
             : setCurrentProductImage(4)
    }
-
-
-    console.log(zoomPicture) 
     return(
         <div className="flex flex-col">
-            <img 
-                src={require(`../../images/image-product-${currentProductImage}.jpg`)} 
-                alt='product chosen'
-                className='object-cover rounded-2xl h-[22rem] w-[22rem] cursor-pointer'
-                onClick={handleZoomPicture}
-            />
+            <div className='relative'>
+                <img 
+                    src={require(`../../images/image-product-${currentProductImage}.jpg`)} 
+                    alt='product chosen'
+                    className='object-cover md:rounded-2xl image-box-responsive-width cursor-pointer'
+                    onClick={handleZoomPicture}
+                />
+                <div className='block md:hidden'>
+                    <PreviousBtn imgCarouselPrevious={imgCarouselPrevious} PreviousBtnStyles={'left-2 bottom-[50%]'}/>
+                    <NextBtn imgCarouselNext={imgCarouselNext} NextBtnStyles={"right-2 bottom-[50%]"}/>
+                </div>
+            </div>
+
             <ProductImageGrid 
                 handleClick={handleClick} 
                 currentProductImage={currentProductImage}

@@ -1,7 +1,7 @@
 import closeLogo from '../../images/icon-close.svg'
-import nextLogo from '../../images/icon-next.svg'
-import previousLogo from '../../images/icon-previous.svg'
 import ProductImageGrid from '../productImageGrid/ProductImageGrid';
+import NextBtn from '../nextBtn/NextBtn';
+import PreviousBtn from '../previousBtn/PreviousBtn';
 
 function ProductImageBoxZoom(props){
     const { handleZoomPicture, handleClick, currentProductImage, 
@@ -9,37 +9,24 @@ function ProductImageBoxZoom(props){
     
     return(
         <article>
-            <div className="absolute w-screen h-screen left-[0] right-0 flex items-center justify-center 
+            <div className="hidden md:absolute w-screen h-screen left-[0] right-0 md:flex items-center justify-center 
             top-0 bg-black-low-opacity">
-                <div className="flex flex-col relative">
-                    <img 
-                        src={closeLogo} 
-                        alt="close logo"
-                        className='absolute -top-8 right-0 cursor-pointer hover:opacity-60'
-                        onClick={handleZoomPicture}
-                    />
-                    <div className='bg-white px-5 p-4 rounded-full absolute -left-6 bottom-[54%]
-                    hover:opacity-75 transition duration-300 ease-out cursor-pointer'
-                    onClick={imgCarouselPrevious}>
-                        <img
-                            src={previousLogo}
-                            alt="previous logo"
+                <div className="flex flex-col">
+                    <div className='relative'>
+                        <img 
+                            src={closeLogo} 
+                            alt="close logo"
+                            className='absolute -top-[10%] md:-top-[5%]  2xl:-top-[10%] right-0 cursor-pointer hover:opacity-60 2xl:w-[2rem]'
+                            onClick={handleZoomPicture}
+                        />
+                        <PreviousBtn imgCarouselPrevious={imgCarouselPrevious} PreviousBtnStyles={'-left-5 bottom-[45%]'}/>
+                        <NextBtn imgCarouselNext={imgCarouselNext} NextBtnStyles={'-right-5 bottom-[45%]'}/>
+                        <img 
+                            src={require(`../../images/image-product-${currentProductImage}.jpg`)} 
+                            alt='product chosen'
+                            className='object-cover md:w-[30rem] md:h-[30rem] w-[20rem] h-[20rem] rounded-2xl 2xl:w-[40rem] 2xl:h-[40rem]'
                         />
                     </div>
-                    <div className='bg-white px-5 p-4 rounded-full absolute -right-6 bottom-[54%]
-                    hover:opacity-75 transition duration-300 ease-out cursor-pointer'
-                    onClick={imgCarouselNext}
-                    >
-                        <img
-                            src={nextLogo}
-                            alt="next logo"
-                        />
-                    </div>
-                    <img 
-                        src={require(`../../images/image-product-${currentProductImage}.jpg`)} 
-                        alt='product chosen'
-                        className='object-cover w-[30rem] h-[30rem] rounded-2xl'
-                    />
                     <ProductImageGrid 
                         handleClick={handleClick} 
                         currentProductImage={currentProductImage}

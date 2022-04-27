@@ -5,7 +5,7 @@ function ProductImageGrid({ currentProductImage,handleClick, gridWidth }){
     const smallImgContainerStyle = (n) => `${currentProductImage === n ? 'border-2 border-orange' : ''} rounded-lg `
     
     return (
-        <div className='grid grid-cols-4 gap-4 mt-4 h-16 w-[22rem] mx-auto'>
+        <div className=' grid-cols-4 gap-4 mt-4 h-16 2xl:w-[32rem] w-[22rem] mx-auto hidden lg:grid'>
                 <div className={smallImgContainerStyle(1)}>
                     <img 
                         src={require('../../images/image-product-1-thumbnail.jpg')} 

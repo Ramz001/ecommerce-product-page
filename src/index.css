@@ -6,11 +6,22 @@
 
 @layer components{
     .nav-link-hover{
-        @apply relative hover:before:absolute hover:before:-bottom-9 before:transition before:duration-1000 before:ease-out before:bg-orange before:left-0 before:right-0 before:h-1
+        @apply relative hover:before:absolute hover:before:-bottom-9 before:transition 
+            before:duration-1000 before:ease-out before:bg-orange before:left-0 
+            before:right-0 before:h-1
     }
     .orange-btn{
         @apply bg-orange text-white rounded-md hover:bg-opacity-70
     }
-    /*animation*/
-   
+    .image-box-responsive-width{
+        @apply 2xl:h-[32rem] 2xl:w-[32rem] lg:h-[22rem] lg:w-[22rem] md:w-[25rem] md:h-[25rem]
+            w-full h-full
+    }
+    .zoom-btn{
+        @apply bg-white px-5 p-4 rounded-full absolute hover:opacity-75 transition 
+            duration-300 ease-out cursor-pointer
+    }
+
 }
+
+/* appear transition */

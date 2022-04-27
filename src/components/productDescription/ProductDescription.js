@@ -4,7 +4,7 @@ function ProductDescription(){
     return (
         <>
         <p className="text-orange uppercase font-bold text-sm">sneaker company</p>
-            <h2 className="text-5xl max-w-md font-bold mt-4 mb-8 text-very-dark-blue capitalize">
+            <h2 className="md:text-5xl text-3xl max-w-md font-bold mt-4 2xl:mt-8 2xl:mb-16 mb-8 text-very-dark-blue capitalize">
                 <ProductTitle />
             </h2>
             <p className="max-w-sm text-sm text-dark-grayish-blue">

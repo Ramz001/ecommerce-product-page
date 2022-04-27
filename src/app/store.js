@@ -4,7 +4,8 @@ import { mainReducer } from './mainReducer';
 export const initialStore = {
   price: 125,
   amount: 0,
-  addToCart: false
+  addToCart: false,
+  cartSeen: false
 }
 
 export const store = configureStore({
