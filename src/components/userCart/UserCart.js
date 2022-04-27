@@ -24,7 +24,6 @@ function UserCart({ togglePopUpCart, amount, addToCart, cartSeen, CartSeen }) {
         alt="user avatar"
         className="md:w-[50%] 2xl:w-[60%] w-[40%] active:border-2 hover:border-2 cursor-pointer border-orange rounded-full selection:hidden"
         loading="lazy"
-        onClick={() => togglePopUpCart()}
       />
     </div>
   );
