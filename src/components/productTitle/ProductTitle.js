@@ -1,6 +1,3 @@
-export default function ProductTitle(){
-    return( 
-    <>
-       fall limited edition sneakers
-    </>)
+export default function ProductTitle() {
+  return <>fall limited edition sneakers</>;
 }
