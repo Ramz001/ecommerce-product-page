@@ -42,11 +42,11 @@ function ProductImageBox() {
         <div className="block md:hidden">
           <PreviousBtn
             imgCarouselPrevious={imgCarouselPrevious}
-            PreviousBtnStyles={"left-2 bottom-[50%]"}
+            PreviousBtnStyles={"left-2"}
           />
           <NextBtn
             imgCarouselNext={imgCarouselNext}
-            NextBtnStyles={"right-2 bottom-[50%]"}
+            NextBtnStyles={"right-2"}
           />
         </div>
       </div>

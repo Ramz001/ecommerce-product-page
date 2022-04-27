@@ -15,10 +15,12 @@ export const mainReducer = (state = initialStore, action) => {
         cartSeen: true,
       };
     case ADD_TO_CART:
-      return {
-        ...state,
-        addToCart: true,
-      };
+      if (state.amount > 0) {  
+        return {
+          ...state,
+          addToCart: true,
+        };
+    }
     case REMOVE_FROM_CART:
       return {
         ...state,

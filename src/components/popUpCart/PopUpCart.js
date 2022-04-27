@@ -15,7 +15,7 @@ function PopUpCart({ popUpCart, amount, price, addToCart, removedFromCart }) {
         <div className="flex p-4 items-center border-b border-light-grayish-blue">
           Cart
         </div>
-        {!addToCart || amount === 0 && (
+        {!addToCart   && (
           <div
             className="p-4 flex items-center justify-center text-sm 
             text-very-dark-blue h-32 w-[22rem]"

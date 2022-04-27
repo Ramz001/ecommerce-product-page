@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 
 function UserCart({ togglePopUpCart, amount, addToCart, cartSeen, CartSeen }) {
   return (
-    <div className="flex 2xl:gap-6 xl:gap-2 gap-1 items-center justify-between w-28">
+    <div className="flex 2xl:gap-6 xl:gap-2 gap-1 items-center justify-between w-24 md:w-28">
       <div className="relative" onClick={() => CartSeen()}>
         <img
           src={cartLogo}
@@ -22,7 +22,7 @@ function UserCart({ togglePopUpCart, amount, addToCart, cartSeen, CartSeen }) {
       <img
         src={imgAvatar}
         alt="user avatar"
-        className="md:w-[50%] 2xl:w-[60%] w-[40%] active:border-2 hover:border-2 cursor-pointer border-orange rounded-full selection:hidden"
+        className="w-[50%] 2xl:w-[60%]  active:border-2 hover:border-2 cursor-pointer border-orange rounded-full selection:hidden"
         loading="lazy"
       />
     </div>

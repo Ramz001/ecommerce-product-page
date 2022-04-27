@@ -29,11 +29,11 @@ function ProductImageBoxZoom(props) {
             />
             <PreviousBtn
               imgCarouselPrevious={imgCarouselPrevious}
-              PreviousBtnStyles={"-left-5 bottom-[45%]"}
+              PreviousBtnStyles={"-left-5"}
             />
             <NextBtn
               imgCarouselNext={imgCarouselNext}
-              NextBtnStyles={"-right-5 bottom-[45%]"}
+              NextBtnStyles={"-right-5"}
             />
             <img
               src={require(`../../images/image-product-${currentProductImage}.jpg`)}
