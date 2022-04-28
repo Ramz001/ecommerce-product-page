@@ -6,7 +6,7 @@ import "../../index.css";
 function ProductAddToCart({ increment, decrement, amount, addToCart }) {
   return (
     <div className="flex flex-col md:flex-row w-full md:w-auto gap-8 items-center mt-4 2xl:mt-8">
-      <div className="flex w-full md:w-auto items-center bg-pale-orange gap-8 justify-between h-14 rounded-md px-4">
+      <div className="flex w-full md:w-auto items-center bg-light-grayish-blue gap-8 justify-between h-14 rounded-md px-4">
         <img
           src={iconMinus}
           alt="minus icon"

@@ -29,6 +29,7 @@ function ProductImageBox() {
       ? setCurrentProductImage(currentProductImage - 1)
       : setCurrentProductImage(4);
   }
+  
   return (
     <div className="flex flex-col">
       <div className="relative">

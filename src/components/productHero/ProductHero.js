@@ -13,7 +13,7 @@ function ProductHero() {
           50%
         </div>
       </div>
-      <div className="line-through text-light-grayish-blue font-bold 2xl:mt-4 mt-2 text-lg">
+      <div className="line-through text-grayish-blue font-bold 2xl:mt-4 mt-2 text-lg">
         $250.00
       </div>
       <ProductAddToCart />

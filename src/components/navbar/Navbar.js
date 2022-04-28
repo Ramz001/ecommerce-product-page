@@ -11,8 +11,9 @@ function Navbar() {
   function togglePopUpCart() {
     setPopUpCart(!popUpCart);
   }
+
   return (
-    <nav className="flex relative md:border-b border-light-grayish-blue justify-between items-center h-24 max-h-32 mx-4 md:mx-0">
+    <nav className="flex relative md:border-b border-grayish-blue justify-between items-center h-24 max-h-32 mx-4 md:mx-0">
       <div className="flex xl:gap-28 gap-8 h-full justify-center items-center relative">
         <MobileNavbar />
         <BrandLogo />
