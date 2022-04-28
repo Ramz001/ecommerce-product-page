@@ -39,7 +39,6 @@ function ProductAddToCart({ increment, decrement, amount, addToCart }) {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state.mainReducer.addToCart);
   return {
     amount: state.mainReducer.amount,
     addToCart: state.mainReducer.addToCart,
