@@ -1,5 +1,4 @@
 import iconMenu from "../../images/icon-menu.svg";
-import iconClose from "../../images/icon-close.svg";
 import { useState } from "react";
 
 export default function MobileNavbar() {

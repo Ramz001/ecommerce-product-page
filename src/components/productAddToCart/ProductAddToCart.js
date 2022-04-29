@@ -10,19 +10,19 @@ function ProductAddToCart({ increment, decrement, amount, addToCart }) {
         <img
           src={iconMinus}
           alt="minus icon"
-          className="px-4 py-1 cursor-pointer selection:hidden"
+          className="px-4 py-1 cursor-pointer select-none"
           onClick={() => decrement()}
         />
         <div className="text-very-dark-blue font-bold">{amount}</div>
         <img
           src={iconPlus}
           alt="plus icon"
-          className="px-4 py-1 cursor-pointer selection:hidden"
+          className="px-4 py-1 cursor-pointer select-none"
           onClick={() => increment()}
         />
       </div>
       <button
-        className="flex gap-4 w-full md:w-48 h-14 items-center justify-center font-bold orange-btn selection:hidden"
+        className="flex gap-4 w-full md:w-48 h-14 items-center justify-center font-bold orange-btn select-none"
         onClick={() => addToCart()}
       >
         <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">

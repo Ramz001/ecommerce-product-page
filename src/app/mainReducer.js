@@ -21,6 +21,7 @@ export const mainReducer = (state = initialStore, action) => {
           addToCart: true,
         };
     }
+    break
     case REMOVE_FROM_CART:
       return {
         ...state,
@@ -31,7 +32,7 @@ export const mainReducer = (state = initialStore, action) => {
         ...state,
         amount: state.amount + 1,
       };
-    case DECREMENT:
+      case DECREMENT:
       if (state.amount > 0) {
         return {
           ...state,
@@ -42,6 +43,6 @@ export const mainReducer = (state = initialStore, action) => {
         ...state,
       };
     default:
-      return state;
+    return state;
   }
 };
