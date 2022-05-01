@@ -19,21 +19,13 @@
   }
   .zoom-btn {
     @apply bg-white px-5 p-4 rounded-full absolute hover:opacity-75 transition 
-            duration-300 ease-out cursor-pointer select-none zoom-btn-center;
+        duration-300 ease-out cursor-pointer selecto-none zoom-btn-center
   }
   .zoom-btn-center{
     top: calc(50% - 2.5rem)
   }
 }
 
-img {
-  -khtml-user-select: none;
-  -o-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-img {
+img, div {
   -webkit-tap-highlight-color: transparent;
 }
