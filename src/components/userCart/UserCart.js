@@ -22,6 +22,7 @@ function UserCart({ togglePopUpCart, amount, addToCart, cartSeen, CartSeen }) {
         src={imgAvatar}
         alt="user avatar"
         className="w-[50%] 2xl:w-[60%]  active:border-2 hover:border-2 cursor-pointer border-orange rounded-full selection:hidden"
+        onClick={() => togglePopUpCart()}
       />
     </div>
   );
